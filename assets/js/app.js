@@ -61,15 +61,48 @@
 // console.log("C# Dersi Bulunamadı");
 // }
 
-const yas = 100;
+// const yas = 100;
 
-if (yas <= 15){
-    console.log("Yaşınız 18 veya 18'den Küçüktür");
-} else if (yas <= 35){
-    console.log("Yaşınız 18 ve 35 Arasındadır");
-} else {
-    console.log("Yaşınız 35'den Büyüktür");
+// if (yas <= 15){
+//     console.log("Yaşınız 18 veya 18'den Küçüktür");
+// } else if (yas <= 35){
+//     console.log("Yaşınız 18 ve 35 Arasındadır");
+// } else {
+//     console.log("Yaşınız 35'den Büyüktür");
 
-}
+// }
 
-// video dk 30.27 dedyim konu Döngülerde Kaldım
+// Döngüler
+
+// let dersler = [];
+// dersler.push("PHP"); 
+// dersler.push("HTML");
+// dersler.push("CSS");
+// dersler.push("Java","Python");
+// dersler.push(".NET CORE"); 
+// dersler.push("F#");
+// dersler.push("CSS");
+
+
+// for (let i = 0; i < dersler.length; i++) {
+//     console.log(dersler[i]," = Dersİ");
+//      console.log("Ders : ",dersler[i]);
+    
+// }
+
+// FOREACH KULLANIMI
+// let dersler = [];
+// dersler.push("PHP","HTML","CSS","C#","F#",".NET CORE","Java","Python");
+
+// dersler.forEach(function (ders,index,array){
+//     console.log("Ders : ", ders, "Ders Index : ", index); 
+// });
+
+// While Kullanımı
+// let i = 0;
+// let dersler = [];
+// dersler.push("PHP","HTML","CSS","C#","F#",".NET CORE","Java","Python");
+// while (i < dersler.length) {
+//     console.log("Ders  = ",dersler[i]);
+//     i++;
+// }
