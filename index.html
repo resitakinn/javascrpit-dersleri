@@ -1,15 +1,72 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Dersleri</title>
 </head>
+
 <body>
     <h1>Js Eğitimi Dersleri Başlangıç</h1>
-    
-    <button onclick="ButtonTiklama()">Tıkla</button>
+    <input type="text" placeholder="İsminiz" id="ad_input" value="Akın" class="input">
+    <button id="tiklaBtn">Tıkla</button>
 
-    <script src="assets/js/app.js"></script>
+    <script>
+    //    NOT !!! buranın üstünde durmam gerekiyor muhakak tekrar yapmam lazım 
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("Döküman Yüklendi");
+            console.log(this);
+            let tiklaBtn = document.querySelector("#tiklaBtn");
+            console.log(tiklaBtn);
+
+            if (tiklaBtn) {
+                tiklaBtn.addEventListener("click", function () {
+                    console.log(this);
+                    let inputElm = document.getElementsByClassName("input");
+                    console.log(inputElm);
+
+                    if (inputElm.length > 0) {
+                        let inputValue = inputElm.item(0);
+                        if (inputValue) {
+                            
+                            console.log(inputValue);
+                            alert("Merhaba " + inputValue.value);
+                        }
+                    }
+
+
+                    // if (inputElm) {
+                    //     let inputValue = inputElm.value;
+                    //     console.log(inputElm);
+                    //     alert("Merhaba " + inputValue);
+                    // }
+                });
+            }
+
+
+
+
+        });
+
+
+
+
+        // function ButtonTiklama(){
+        //     let  inputElm = document.getElementById("ad_input")
+        //     console.log(inputElm);
+        //     if (inputElm) {
+        //         let inputValue = inputElm.value;
+        //         console.log(inputElm);
+        //         alert("Merhaba " + inputValue);
+        //     }
+        // }
+    </script>
+
+
+
+
+    <!-- <script src="assets/js/app.js"></script> -->
 </body>
+
 </html>
