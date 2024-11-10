@@ -106,3 +106,9 @@
 //     console.log("Ders  = ",dersler[i]);
 //     i++;
 // }
+
+// button tüklama işlemleri
+
+function ButtonTiklama() {
+    console.log("Tıklandı");
+}
